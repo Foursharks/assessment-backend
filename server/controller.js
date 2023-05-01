@@ -22,9 +22,10 @@ module.exports = {
 
     postCompliment: (req, res) => {
         const compliments = [`nice`, `handsome`, `silly`];
-        const {newCompliment} = req.params; 
-    //add the compliment to the db
-    compliments.push(req.params.newCompliment);  
-        res.status(200).send(compliments); 
+        // const {newCompliment} = req.params;
+        // console.log(newCompliment);
+    // //add the compliment to the db
+    // compliments.push(req.params.newCompliment);  
+        // res.status(200).send(compliments); 
     }
 }

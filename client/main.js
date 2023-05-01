@@ -92,8 +92,7 @@ const insert = (x) => {
 //Post a new compliment to the compliment database
 document.getElementById("submit").onclick = function() {
     let addCompliment = document.querySelector("input").value; 
-        axios.post(`http://localhost:4000/compliments/${newCompliment}`).then(function(response){
-        //   console.log(response.data); 
-          insert(response.data)
+        axios.post(`http://localhost:4000/api/compliments/${addCompliment}`).then(function(response){
+        alert(`The database contains ${response.data}`)
         }); 
     }
